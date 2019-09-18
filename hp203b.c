@@ -24,21 +24,6 @@ error* hp203b_init(hp203bt** pobj, int i2c_fd, hp203b_dsr dsr) {
     _obj->i2c_fd = i2c_fd;
     _obj->dsr = dsr;
 
-    int res = ioctl(_obj->i2c_fd, I2C_SLAVE, ADDRESS);
-    if(res != 0) {
-        free(_obj);
-        return "ioctl() failed";
-    }
-
-    // in the absence of a who_am_i register,
-    // just test sensor presence (like i2cdetect does)
-    uint8_t out;
-    res = read(_obj->i2c_fd, &out, 1);
-    if(res != 1) {
-        free(_obj);
-        return "unable to find sensor";
-    }
-
     *pobj = _obj;
     return NULL;
 }
