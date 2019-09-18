@@ -19,7 +19,7 @@ Works with the Raspberry Pi and probably with most of single-board computers equ
 int main() {
     int i2c_fd = open("/dev/i2c-1", O_RDWR);
     if(i2c_fd < 0) {
-        return "unable to open /dev/i2c-1";
+        return -1;
     }
 
     void* hp203b;
