@@ -1,6 +1,8 @@
 # sensor-hp203b
 
-C library for interacting with the HP203B barometer sensor
+C library for interacting with the HP203B barometer sensor.
+
+Works with the Raspberry Pi and probably with most of single-board computers equipped with I2C.
 
 
 ## Usage
