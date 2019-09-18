@@ -5,8 +5,7 @@ OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
 
 CFLAGS += -Wall \
 	-Werror \
-	-O3 \
-	-I/opt/vc/include
+	-O3
 
 LDFLAGS +=
 
