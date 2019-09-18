@@ -52,5 +52,6 @@ int main() {
     }
 
     printf("%f %f %f\n", p, t, a);
+    return 0;
 }
 ```
