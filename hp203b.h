@@ -17,6 +17,7 @@ typedef enum {
 typedef void hp203bt;
 
 error* hp203b_init(hp203bt** pobj, int i2c_fd, hp203b_dsr dsr);
+void hp203b_destroy(hp203bt* obj);
 error* hp203b_do_adc(hp203bt* obj, int wait);
 int hp203b_get_wait_usec(hp203bt* obj);
 error* hp203b_get_pressure(hp203bt* obj, double* target);

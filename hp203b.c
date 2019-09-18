@@ -43,6 +43,10 @@ error* hp203b_init(hp203bt** pobj, int i2c_fd, hp203b_dsr dsr) {
     return NULL;
 }
 
+void hp203b_destroy(hp203bt* obj) {
+    free(obj);
+}
+
 error* hp203b_do_adc(hp203bt* obj, int wait) {
     _objt* _obj = (_objt*)obj;
 
