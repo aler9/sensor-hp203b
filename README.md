@@ -6,6 +6,11 @@ Features:
 * works with the Raspberry Pi and probably with almost every single-board computer equipped with I2C
 
 
+## Installation
+
+Copy into your project folder all the files ending with `.c` and `.h`.
+
+
 ## Usage
 
 ```
