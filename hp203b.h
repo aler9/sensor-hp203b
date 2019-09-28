@@ -1,6 +1,8 @@
 
 #pragma once
 
+typedef const char error;
+
 // DSR = down sampling rate
 // the higher the DSR, the higher the precision and sampling time
 // 4096 = 131ms

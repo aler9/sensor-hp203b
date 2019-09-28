@@ -4,7 +4,6 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include "error.h"
 #include "hp203b.h"
 
 #define ADDRESS 0x76

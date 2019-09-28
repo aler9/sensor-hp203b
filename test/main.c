@@ -6,7 +6,6 @@
 #include <stdint.h>
 #include <time.h>
 
-#include "../error.h"
 #include "../hp203b.h"
 
 static uint32_t clock_usec() {
