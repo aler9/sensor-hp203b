@@ -27,7 +27,7 @@ int main() {
         return -1;
     }
 
-    void* hp203b;
+    hp203bt* hp203b;
     error* err = hp203b_init(&hp203b, i2c_fd, DSR_4096);
     if(err != NULL) {
         return -1;
